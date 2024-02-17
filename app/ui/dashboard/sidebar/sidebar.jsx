@@ -91,7 +91,7 @@ const Sidebar = async () => {
           height="50"
         />
         <div className={styles.userDetail}>
-          <span className={styles.username}>{user.username}</span>
+          <span className={styles.username}>{user.email}</span>
           <span className={styles.userTitle}>Administrator</span>
         </div>
       </div>

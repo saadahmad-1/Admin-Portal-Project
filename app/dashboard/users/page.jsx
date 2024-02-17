@@ -36,13 +36,13 @@ const UsersPage = async ({ searchParams }) => {
               <td>
                 <div className={styles.user}>
                   <Image
-                    src={user.img || "/noavatar.png"}
+                    src={"/noavatar.png"}
                     alt=""
                     width={40}
                     height={40}
                     className={styles.userImage}
                   />
-                  {user.username}
+                  {user.email}
                 </div>
               </td>
               <td>{user.email}</td>
@@ -57,7 +57,7 @@ const UsersPage = async ({ searchParams }) => {
                     </button>
                   </Link>
                   <form action={deleteUser}>
-                    <input type="hidden" name="id" value={(user.id)} />
+                    <input type="hidden" name="id" value={user.id} />
                     <button className={`${styles.button} ${styles.delete}`}>
                       Delete
                     </button>
