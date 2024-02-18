@@ -8,7 +8,7 @@ import Transactions from "../ui/dashboard/transactions/transactions";
 const Dashboard = () => {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.main}>
+      {/* <div className={styles.main}>
         <div className={styles.cards}>
           {cards.map((item) => (
             <Card item={item} key={item.id} />
@@ -16,10 +16,10 @@ const Dashboard = () => {
         </div>
         <Transactions />
         <Chart />
-      </div>
-      <div className={styles.side}>
+      </div> */}
+      {/* <div className={styles.side}>
         <Rightbar />
-      </div>
+      </div> */}
     </div>
   );
 };
